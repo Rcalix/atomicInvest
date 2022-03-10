@@ -1,0 +1,96 @@
+@import-normalize;
+
+#atomic-module-backdrop {
+  display: block;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 999999999999;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#atomic-module-iframe {
+  display: block; 
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  border-width: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.app {
+  width: 100vw;
+  height: 700px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.row {
+  width: 100vw;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media only screen and (min-width: 600px) {
+  .row {
+    width: 600px;
+  }
+}
+
+.logo {
+  -ms-interpolation-mode: bicubic;
+  border: 0;
+  height: auto;
+  line-height: 100%;
+  outline: none;
+  text-decoration: none;
+  vertical-align: middle;
+}
+
+.logo-text {
+  font-weight: 600;
+  font-size: 18px;
+  color: #999;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+h1 {
+  color: #111;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+}
+
+.title {
+  margin-top: 40px;
+  font-weight: 400;
+  color: #333;
+}
+
+.users {
+  margin-top: 10px;
+}
+
+.features {
+  margin-top: 10px;
+  color: #777;
+}
+
+.footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-bottom: 50px;
+}
